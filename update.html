@@ -27,14 +27,14 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="image/architect.jpg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="image/background.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
 
 		
 		  <!-- Contact Section -->
 		  <div class="w3-container w3-padding-32" id="#">
 		    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Update</h3>
-		    <p>Update Store</p>
+		    <p style="color:white;" >Update Store</p>
 		    <form action="update.html">
 		      <input class="w3-input w3-border" type="text" placeholder="Store ID:" required="" name="storeid">
           <input class="w3-input w3-section w3-border" type="text" placeholder="Accountant:" required="" name="accountant">
@@ -56,8 +56,8 @@
       else{
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
-        "host=ec2-54-221-212-126.compute-1.amazonaws.com;port=5432;user=izocmgwpkfcpxq;password=
-f8d783b470b6f7b1904fee5464f605225893f357c07d25359e4b8ac22f1078f1;dbname=ddfu3emrcml2vm",
+        "host=ec2-54-83-201-84.compute-1.amazonaws.com;port=5432;user=muehvkozxysanc;password=
+53bed6cd1774867dec43ef04176166ed5189018c79252af5738b6e675e767e66;dbname=da7qut8saie0l7",
         $db["host"],
         $db["port"],
         $db["user"],

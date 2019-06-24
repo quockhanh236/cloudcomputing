@@ -13,29 +13,29 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.php" class="w3-bar-item w3-button"><b>ATN</b> Toy Store</a>
+    <a href="index.html" class="w3-bar-item w3-button"><b>ATN</b> Toy Store</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="home.php" class="w3-bar-item w3-button">Home</a>
-      <a href="view.php" class="w3-bar-item w3-button">View</a>
-      <a href="insert.php" class="w3-bar-item w3-button">Insert</a>
-      <a href="update.php" class="w3-bar-item w3-button">Update</a>
-      <a href="delete.php" class="w3-bar-item w3-button">Delete</a>
+      <a href="home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="view.html" class="w3-bar-item w3-button">View</a>
+      <a href="insert.html" class="w3-bar-item w3-button">Insert</a>
+      <a href="update.html" class="w3-bar-item w3-button">Update</a>
+      <a href="delete.html" class="w3-bar-item w3-button">Delete</a>
     </div>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="image/architect.jpg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="image/background.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
 
 		
 		  <!-- Contact Section -->
 		  <div class="w3-container w3-padding-32" id="#">
 		    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Update</h3>
-		    <p>Update Store</p>
-		    <form name="UpdateData" action="update.php" method="POST">
+		    <p style="color:white;" >Update Store</p>
+		    <form action="update.html">
 		      <input class="w3-input w3-border" type="text" placeholder="Store ID:" required="" name="storeid">
           <input class="w3-input w3-section w3-border" type="text" placeholder="Accountant:" required="" name="accountant">
           <input class="w3-input w3-section w3-border" type="text" placeholder="Revenue:" required="" name="revenue">
@@ -56,8 +56,8 @@
       else{
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
-        "host=ec2-174-129-242-183.compute-1.amazonaws.com;port=5432;user=qkxfwavulqlxvt;password=
-  ea8f38ba555d8e3653c01373023997d24aa21921ec7e81c6301a42bdcfbd0613;dbname=dcg52sr0hlvenk",
+        "host=ec2-54-83-201-84.compute-1.amazonaws.com;port=5432;user=muehvkozxysanc;password=
+53bed6cd1774867dec43ef04176166ed5189018c79252af5738b6e675e767e66;dbname=da7qut8saie0l7",
         $db["host"],
         $db["port"],
         $db["user"],
